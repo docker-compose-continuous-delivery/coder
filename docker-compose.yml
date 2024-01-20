@@ -10,6 +10,8 @@ services:
       - .coder.env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+    group_add:
+      - 115
     depends_on:
       - postgres-coder
     networks:
