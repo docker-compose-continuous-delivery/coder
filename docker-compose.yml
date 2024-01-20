@@ -5,7 +5,7 @@ services:
     image: ghcr.io/coder/coder:latest
     environment:
       CODER_HTTP_ADDRESS: "0.0.0.0:7080"
-      CODER_ACCESS_URL: "coder.${BASE_DOMAIN}"
+      CODER_ACCESS_URL: "https://coder.${BASE_DOMAIN}"
     env_file:
       - .coder.env
     volumes:
